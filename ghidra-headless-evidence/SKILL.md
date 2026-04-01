@@ -23,6 +23,15 @@ This phase covers:
 - artifact capture and review surfaces
 - validation expectations for generated planning artifacts
 
+This phase is generic evidence planning. It does not own active Frida runtime
+capture. When the request needs new Frida capture planning rather than review
+of already captured outputs, route first to
+[`../ghidra-headless-frida-runtime-injection/SKILL.md`](../ghidra-headless-frida-runtime-injection/SKILL.md).
+When a runtime-capture manifest already exists and the remaining work is
+provenance review, observed-versus-inferred claim labeling, or
+static-vs-dynamic conflict recording, route to
+[`../ghidra-headless-frida-evidence/SKILL.md`](../ghidra-headless-frida-evidence/SKILL.md).
+
 ## Non-Negotiable Constraints
 
 - Headless-only workflow. Evidence collection must not depend on GUI-only
@@ -61,6 +70,12 @@ This phase covers:
 ## Next Step Routing
 
 - Use this phase after intake is stable and before script-specific planning.
+- Move to the Frida runtime-injection phase when the planning request still
+  needs reproducible CLI/headless Frida capture, common script selection, or a
+  capture manifest before imported evidence can be reviewed.
+- Move to the Frida evidence phase when the planning request depends on
+  externally captured Frida traces, hook logs, or session notes that need their
+  own provenance and replayable handoff contract.
 - Return to intake if the real gap is still target identity, initial scope, or
   setup normalization rather than evidence design.
 - Move to script authoring and review when the plan introduces reusable Ghidra

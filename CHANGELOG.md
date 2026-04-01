@@ -1,8 +1,8 @@
-## 1.2.1 (2026-04-01)
+## 1.3.0 (2026-04-01)
 
-### 🐛 Bug Fixes
+### ✨ Features
 
-* **ghidra-headless:** harden untrusted input guardrails
+* **ghidra-headless:** add Frida runtime and evidence skill phases
 
 ## <small>1.0.5 (2026-03-31)</small>
 

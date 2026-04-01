@@ -7,15 +7,17 @@
     "ghidra-headless",
     "ghidra-headless-auto-evolution",
     "ghidra-headless-evidence",
+    "ghidra-headless-frida-evidence",
+    "ghidra-headless-frida-runtime-injection",
     "ghidra-headless-intake",
     "ghidra-headless-progressive-decompilation",
     "ghidra-headless-script-review"
   ],
-  "sourceVersion": "1.2.1",
-  "sourceGitTag": "v1.2.1",
-  "sourceCommitSha": "08c6033787228390584fcd7e453ba6dc4763c094",
+  "sourceVersion": "1.3.0",
+  "sourceGitTag": "v1.3.0",
+  "sourceCommitSha": "c551c5c9565613d2caf361384f6ad1bedec99a5f",
   "destinationDirectory": "",
   "destinationBranch": "main",
   "mirrorMode": "exact_mirror",
-  "publishedAt": "2026-04-01T08:48:19.217Z"
+  "publishedAt": "2026-04-01T15:27:33.447Z"
 }

@@ -16,7 +16,9 @@ constrained_outputs:
 
 Use this brief when planning includes reusable headless Ghidra scripts,
 registration expectations, or checklist-driven review requirements that must be
-preserved through `speckit`.
+preserved through `speckit`, including reusable Frida capture helpers,
+common-library changes, or manifest-generation scripts escalated from the
+runtime and evidence phases.
 
 # Non-Negotiable Reverse-Engineering Constraints
 
@@ -28,6 +30,9 @@ preserved through `speckit`.
   registration steps must be replayable.
 - Reviewable Markdown outputs. `spec.md`, `plan.md`, `tasks.md`, and review
   findings must remain inspectable in Markdown.
+- Reusable Frida helper, coverage-change, and manifest-generation work must be
+  made explicit here rather than hidden inside runtime-injection or
+  evidence-import notes.
 - No downstream extension or constitution change is required. The contract is
   portable across repositories and only allows stricter overlays.
 
@@ -35,9 +40,13 @@ preserved through `speckit`.
 
 - `script_scope`: what the reusable script must do and where it fits in the
   workflow
+- `frida_governance_scope`: whether the work adds script coverage, changes
+  output behavior, or introduces reusable capture or manifest helpers
 - `deterministic_expectations`: required inputs, outputs, and replay behavior
 - `registration_requirements`: repository-relative location, naming, and review
   expectations
+- `manifest_obligations`: which capture or evidence manifests the reusable
+  script must create, update, or keep aligned
 - `non_negotiable_constraints`: headless-only, evidence-backed,
   reproducibility, and Markdown reviewability requirements
 - `validation_expectations`: how a reviewer confirms script obligations
@@ -57,6 +66,12 @@ Script scope:
 - [fill in the script objective]
 - [fill in where the script fits in the workflow]
 
+Frida governance scope:
+
+- [fill in whether this is new coverage, changed behavior, or a reusable
+  helper]
+- [fill in which phase escalated the work here]
+
 Deterministic expectations:
 
 - [fill in required inputs]
@@ -68,6 +83,11 @@ Registration requirements:
 - repository-relative script location
 - review checklist requirement
 - naming or manifest expectations
+
+Manifest obligations:
+
+- [fill in capture manifest updates or generation rules]
+- [fill in evidence manifest updates or generation rules]
 
 Non-negotiable constraints:
 
@@ -81,6 +101,10 @@ Validation expectations:
 
 - A reviewer can identify script scope, deterministic behavior, and review
   requirements in one pass.
+- A reviewer can tell whether runtime-injection or evidence-import was correct
+  to escalate the work here.
+- A reviewer can confirm the script's output and manifest obligations still
+  align with the Frida runtime and evidence contracts.
 - Generated artifacts preserve those obligations without weakening them.
 ```
 
@@ -96,8 +120,12 @@ Validation expectations:
   review surface.
 - `plan.md` preserves repository-relative script placement, registration, and
   replayable execution expectations.
+- `plan.md` identifies whether the work is a Frida library-coverage change, a
+  behavior change, or a reusable manifest-generation helper.
 - `tasks.md` includes checklist-based authoring and review work rather than
   implying ad hoc or hidden review.
+- `tasks.md` keeps capture-helper and manifest-generation follow-up explicit
+  when runtime or evidence phases escalate them here.
 - Generated artifacts keep headless-only, evidence-backed, reproducible, and
   Markdown-reviewable expectations explicit.
 - If a generated artifact weakens this contract, refine or regenerate the
@@ -107,6 +135,8 @@ Validation expectations:
 
 - Local repository rules may add stricter script registration, naming, or
   review requirements.
+- Local repository rules may add stricter Frida script metadata, coverage-note,
+  or manifest-generation requirements.
 - Local repository rules may not allow non-deterministic script behavior, GUI
   dependency, or hidden non-Markdown review surfaces.
 - Treat stricter local rules as additive overlays.
