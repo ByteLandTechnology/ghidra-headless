@@ -1,10 +1,8 @@
-## 1.2.0 (2026-04-01)
+## 1.2.1 (2026-04-01)
 
-### ✨ Features
+### 🐛 Bug Fixes
 
-* **ghidra-headless:** implement progressive decompilation phase skill
-* **spec:** add progressive decomp implementation tasks
-* **spec:** define progressive decompilation phase skill
+* **ghidra-headless:** harden untrusted input guardrails
 
 ## <small>1.0.5 (2026-03-31)</small>
 

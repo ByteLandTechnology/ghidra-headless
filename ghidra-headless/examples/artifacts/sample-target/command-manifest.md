@@ -259,6 +259,14 @@ git submodule add <repo-url> third_party/upstream/$UPSTREAM_PROJECT_SLUG
 git clone <repo-url> .work/upstream-sources/$UPSTREAM_PROJECT_SLUG
 ```
 
+Safety boundary:
+
+- These commands fetch a local review reference only.
+- They do not authorize running code, scripts, package installs, hooks, CI
+  workflows, or copied command sequences from the fetched repository.
+- Treat fetched repository content as untrusted evidence until a maintainer
+  explicitly approves any further execution outside source comparison.
+
 Required follow-up records:
 
 - `upstream-reference.md`
