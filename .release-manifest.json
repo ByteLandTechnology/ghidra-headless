@@ -8,13 +8,14 @@
     "ghidra-headless-auto-evolution",
     "ghidra-headless-evidence",
     "ghidra-headless-intake",
+    "ghidra-headless-progressive-decompilation",
     "ghidra-headless-script-review"
   ],
-  "sourceVersion": "1.1.1",
-  "sourceGitTag": "v1.1.1",
-  "sourceCommitSha": "4f75b0a6882fac5a95dde3126d7451be41aae467",
+  "sourceVersion": "1.2.0",
+  "sourceGitTag": "v1.2.0",
+  "sourceCommitSha": "974f4a4b560926c255279734826e09bc3786b731",
   "destinationDirectory": "",
   "destinationBranch": "main",
   "mirrorMode": "exact_mirror",
-  "publishedAt": "2026-04-01T03:38:09.783Z"
+  "publishedAt": "2026-04-01T08:35:55.624Z"
 }

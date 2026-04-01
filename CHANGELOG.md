@@ -1,9 +1,10 @@
-## 1.1.1 (2026-04-01)
+## 1.2.0 (2026-04-01)
 
-### 🐛 Bug Fixes
+### ✨ Features
 
-* **release:** omit source commit hashes from changelog
-* **release:** publish changelog to destination repo
+* **ghidra-headless:** implement progressive decompilation phase skill
+* **spec:** add progressive decomp implementation tasks
+* **spec:** define progressive decompilation phase skill
 
 ## <small>1.0.5 (2026-03-31)</small>
 
