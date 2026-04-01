@@ -1,0 +1,20 @@
+{
+  "skillId": "ghidra-headless",
+  "sourceRepository": "byteland-app/ghidra-headless-skill",
+  "sourceSkillRootPath": ".agents/skills",
+  "sourceSkillPrefix": "ghidra-headless",
+  "publishedSkillIds": [
+    "ghidra-headless",
+    "ghidra-headless-auto-evolution",
+    "ghidra-headless-evidence",
+    "ghidra-headless-intake",
+    "ghidra-headless-script-review"
+  ],
+  "sourceVersion": "1.1.1",
+  "sourceGitTag": "v1.1.1",
+  "sourceCommitSha": "4f75b0a6882fac5a95dde3126d7451be41aae467",
+  "destinationDirectory": "",
+  "destinationBranch": "main",
+  "mirrorMode": "exact_mirror",
+  "publishedAt": "2026-04-01T03:38:09.783Z"
+}
