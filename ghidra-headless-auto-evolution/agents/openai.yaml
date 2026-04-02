@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ghidra Auto Evolution"
+  short_description: "Promote reusable workflow improvements"
+  default_prompt: "Use $ghidra-headless-auto-evolution to review completed work and decide whether it should become a supported reusable asset."

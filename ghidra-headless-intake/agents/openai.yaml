@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ghidra Headless Intake"
+  short_description: "Plan target intake and project setup"
+  default_prompt: "Use $ghidra-headless-intake to scope the target, deliverables, and planning inputs for this Ghidra task."

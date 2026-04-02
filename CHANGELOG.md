@@ -1,8 +1,8 @@
-## 1.3.1 (2026-04-02)
+## 1.4.0 (2026-04-02)
 
-### 📚 Documentation
+### ✨ Features
 
-* **ghidra-headless:** add runtime choice ux guidance
+* **release:** add exported skill package metadata
 
 ## <small>1.0.5 (2026-03-31)</small>
 
