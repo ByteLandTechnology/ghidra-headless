@@ -57,6 +57,22 @@ evidence scenarios:
 - audit gates required before evidence import can proceed
 - optional stricter local rule overlays
 
+## Runtime Choice UX
+
+When the running skill genuinely needs the user to choose between runtime
+scenarios, reusable scripts, coverage-gap routes, or other discrete options:
+
+1. If the runtime exposes a structured choice input tool (for example
+   `request_user_input`), use it instead of a plain-text list.
+2. Keep each option short, mutually exclusive, and user-facing.
+3. Put the recommended or default option first whenever the current manifest or
+   scenario evidence clearly favors one, and state that recommendation briefly.
+4. Fall back to Markdown or plain-text lists only when no structured choice
+   input is available.
+5. If one reviewed runtime scenario or reusable script already stands as the
+   justified default, do not force a dialog; record the default path and the
+   manifest evidence behind it.
+
 ## Common Script Selection Workflow
 
 1. Start in [`./frida-scripts/manifest.md`](./frida-scripts/manifest.md) to

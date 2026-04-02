@@ -340,6 +340,22 @@ Stage 6 compare-gated decompilation:
 9. Treat `blocked`, `unresolved`, `diverged`, and `deviation_only` compare
    states as unable to authorize deeper selection.
 
+## Runtime Choice UX
+
+When the running skill genuinely needs the user to choose between analysis
+categories, targets, or other discrete options:
+
+1. If the runtime exposes a structured choice input tool (for example
+   `request_user_input`), use it instead of a plain-text list.
+2. Keep each option short, mutually exclusive, and user-facing.
+3. Put the recommended or default option first whenever the current evidence
+   clearly favors one, and state that recommendation briefly.
+4. Fall back to Markdown or plain-text lists only when no structured choice
+   input is available.
+5. If only one reviewed option remains or the workflow already has a justified
+   automatic default, do not force a dialog; state the default path and why it
+   applies.
+
 ## Current Runtime Workflow Reference
 
 When the work moves from planning into actual reverse engineering, the umbrella

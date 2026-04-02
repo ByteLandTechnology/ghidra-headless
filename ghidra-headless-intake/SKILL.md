@@ -51,6 +51,21 @@ Prepare the planning brief with:
 - existing repository constraints or local overlays that only tighten the
   contract
 
+## Runtime Choice UX
+
+When the running skill genuinely needs the user to choose between scope
+boundaries, deliverable types, or other discrete intake options:
+
+1. If the runtime exposes a structured choice input tool (for example
+   `request_user_input`), use it instead of a plain-text list.
+2. Keep each option short, mutually exclusive, and user-facing.
+3. Put the recommended or default option first whenever the current intake
+   evidence clearly favors one, and state that recommendation briefly.
+4. Fall back to Markdown or plain-text lists only when no structured choice
+   input is available.
+5. If only one reviewed scope or deliverable path remains, do not force a
+   dialog; state the automatic default and the intake evidence supporting it.
+
 ## How To Use This Skill
 
 1. Fill in [`./planning-brief.md`](./planning-brief.md) with the intake facts

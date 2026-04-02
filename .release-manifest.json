@@ -13,11 +13,11 @@
     "ghidra-headless-progressive-decompilation",
     "ghidra-headless-script-review"
   ],
-  "sourceVersion": "1.3.0",
-  "sourceGitTag": "v1.3.0",
-  "sourceCommitSha": "c551c5c9565613d2caf361384f6ad1bedec99a5f",
+  "sourceVersion": "1.3.1",
+  "sourceGitTag": "v1.3.1",
+  "sourceCommitSha": "f50534837f382fa6bf17903bce408950f59cc35b",
   "destinationDirectory": "",
   "destinationBranch": "main",
   "mirrorMode": "exact_mirror",
-  "publishedAt": "2026-04-01T15:27:33.447Z"
+  "publishedAt": "2026-04-02T01:47:46.950Z"
 }

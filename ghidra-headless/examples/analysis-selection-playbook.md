@@ -58,6 +58,16 @@ Start every deeper step by showing what the current artifacts already expose.
 
 Suggested review prompt:
 
+- If the runtime supports structured choice input, ask the user to choose the
+  next category through a single dialog with short, mutually exclusive options.
+- Put the recommended category first when the current evidence clearly points
+  to one.
+- If only one reviewed category remains, or the current evidence already
+  justifies the next category, do not force a dialog; state the default choice
+  and the evidence that made it safe.
+- Fall back to the plain-text prompt below only when no structured choice input
+  is available.
+
 ```text
 Current evidence shows:
 - imports/libraries:

@@ -1,8 +1,8 @@
-## 1.3.0 (2026-04-01)
+## 1.3.1 (2026-04-02)
 
-### ✨ Features
+### 📚 Documentation
 
-* **ghidra-headless:** add Frida runtime and evidence skill phases
+* **ghidra-headless:** add runtime choice ux guidance
 
 ## <small>1.0.5 (2026-03-31)</small>
 
